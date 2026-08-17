@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why it's hard to copy — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .tiers{ display:flex; gap:0; margin-top:30px; border:1px solid var(--ink-line);}
+  .tier{ flex:1; padding:20px; position:relative;}
+  .tier + .tier{ border-left:1px solid var(--ink-line);}
+  .tier .lvl{ font-family:var(--mono); font-size:10.5px; color:var(--gold); letter-spacing:.08em;}
+  .tier h4{ font-family:var(--serif); font-size:18px; margin:8px 0 8px;}
+  .tier p{ font-size:12px; color:var(--ink-text-dim); margin:0; line-height:1.55;}
+  .moat-grid{ margin-top:44px; display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:900px){ .moat-grid{grid-template-columns:1fr;} }
+  .moat-grid .card p{ font-size:12.5px; color:var(--ink-text-dim); line-height:1.55; margin:0;}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 04 &middot; Defensibility</div>
+    <h1>The boring part is the moat: staying online when Amazon fights back.</h1>
+    <p class="lede">Amazon actively tries to block automated readers of its own pages. Every
+    keyword-research tool in this category lives or dies on how well it survives that — and this
+    one is built with a three-tier fallback system specifically to survive it.</p>
+
+    <div class="tiers" aria-hidden="true">
+      <div class="tier"><div class="lvl">LEVEL 0</div><h4>Fast &amp; light</h4><p>Plain, high-speed requests with a spoofed browser fingerprint. Handles the large majority of traffic cheaply.</p></div>
+      <div class="tier"><div class="lvl">LEVEL 0 (RETRY)</div><h4>New fingerprint</h4><p>If blocked, retries automatically with a different signature before escalating further.</p></div>
+      <div class="tier"><div class="lvl">LEVEL 1</div><h4>Stealth browser</h4><p>A real, disguised headless browser for pages that specifically detect bots.</p></div>
+      <div class="tier"><div class="lvl">LEVEL 2</div><h4>Full browser</h4><p>Last resort: a complete browser running real JavaScript, for the pages nothing else can reach.</p></div>
+    </div>
+
+    <div class="moat-grid">
+      <div class="card"><h3 style="margin-bottom:10px;">Runs on real, current data</h3><p>Because every session is a live crawl, not a stale licensed dataset, results reflect the shelf exactly as it looks right now — the thing a paid, static database can't promise.</p></div>
+      <div class="card"><h3 style="margin-bottom:10px;">Five markets already live</h3><p>US, Germany, France, Italy, and Spain are each mapped with their own verified search filters — an install base most single-market competitors haven't bothered to build.</p></div>
+      <div class="card"><h3 style="margin-bottom:10px;">Never leaves a job stuck</h3><p>Every background job — scrape, AI call, or render — runs under a deadline and reconciles itself on restart, so a crashed worker never leaves a paying customer staring at a spinner.</p></div>
+    </div>
+
+    <hr class="rule">
+    <p class="body-text">None of this is exotic technology. It's disciplined engineering, accumulated
+    over real production incidents — which is exactly why it's slow and expensive for a competitor
+    to copy in a weekend, and exactly why it's still standing.</p>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

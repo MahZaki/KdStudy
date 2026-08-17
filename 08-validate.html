@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validate — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .layout{ display:grid; grid-template-columns: 1fr 1fr; gap:44px; margin-top:26px; align-items:start;}
+  @media (max-width:960px){ .layout{grid-template-columns:1fr;} }
+  .verdict-card{ background:var(--ink-2); border:1px solid var(--ink-line); padding:26px;}
+  .verdict-badge{ display:inline-flex; align-items:center; gap:10px; padding:8px 16px; border-radius:20px; background:rgba(92,138,74,.12); border:1px solid rgba(92,138,74,.5);}
+  .verdict-badge i{ width:9px;height:9px;border-radius:50%; background:#5C8A4A; box-shadow:0 0 0 4px rgba(92,138,74,.2);}
+  .verdict-badge span{ font-family:var(--mono); font-size:12px; letter-spacing:.08em; color:#8fbf7c; text-transform:uppercase;}
+  .snap-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px 24px; margin-top:22px;}
+  .snap-grid .sm{ font-family:var(--mono); font-size:11px; color:var(--ink-text-dim); }
+  .snap-grid .sv{ font-family:var(--serif); font-size:21px; margin-top:2px;}
+  .hist{ display:flex; align-items:flex-end; gap:4px; height:52px; margin-top:20px;}
+  .hist i{ flex:1; background:var(--gold); opacity:.55; }
+  .feature-list .f{ padding:16px 0; border-bottom:1px solid var(--ink-line);}
+  .feature-list .f h4{ font-family:var(--serif); font-size:17px; margin:0 0 6px;}
+  .feature-list .f p{ font-size:13px; color:var(--ink-text-dim); margin:0; line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 03 &middot; Product &middot; Stage 2</div>
+    <h1>A traffic light, not a spreadsheet, for "should I write this?"</h1>
+    <p class="lede">Validate takes everything Discover found and turns it into one honest verdict —
+    the step that used to take three days of squinting at a spreadsheet.</p>
+
+    <div class="layout">
+      <div class="verdict-card" aria-hidden="true">
+        <div class="verdict-badge"><i></i><span>Green &middot; Penetrable niche</span></div>
+        <div class="snap-grid">
+          <div><div class="sm">AVG BSR</div><div class="sv">58,240</div></div>
+          <div><div class="sm">AVG REVIEWS</div><div class="sv">147</div></div>
+          <div><div class="sm">LOW-REVIEW %</div><div class="sv">42%</div></div>
+          <div><div class="sm">NEWCOMER COUNT</div><div class="sv">6 / 20</div></div>
+        </div>
+        <div class="sm" style="margin-top:20px;">BSR DISTRIBUTION (LOWER = BETTER)</div>
+        <div class="hist">
+          <i style="height:20%;"></i><i style="height:35%;"></i><i style="height:70%;"></i>
+          <i style="height:100%;"></i><i style="height:60%;"></i><i style="height:40%;"></i>
+          <i style="height:25%;"></i><i style="height:15%;"></i>
+        </div>
+      </div>
+
+      <div class="feature-list">
+        <div class="f"><h4>Market snapshot</h4><p>Average rank, reviews, rating, and price across every competing book, plus what share of the field is low-review or brand-new — a proxy for how open the door still is.</p></div>
+        <div class="f"><h4>Seasonal timing</h4><p>Flags whether a niche is evergreen or seasonal (holiday, back-to-school, and so on), so an author doesn't spend six weeks building a Christmas book in February.</p></div>
+        <div class="f"><h4>Interest trend</h4><p>A twelve-month interest curve shows whether search demand for the topic is rising, flat, or fading — sourced independently of Amazon itself.</p></div>
+        <div class="f"><h4>One-click handoff</h4><p>A validated niche flows straight into Create with the session already attached — no re-entering the topic, the competitors, or the research.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

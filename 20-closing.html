@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The next chapter — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .close-slide{ min-height:100vh; display:flex; flex-direction:column; justify-content:center;}
+  .close-title{ font-family:var(--serif); font-weight:600; font-size:clamp(38px,5.4vw,68px); line-height:1.05; margin:0 0 24px;}
+  .close-title em{ font-style:italic; font-weight:400; color:var(--gold-bright);}
+  .recap{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin:44px 0; border:1px solid var(--ink-line);}
+  .recap .rc{ padding:20px; text-align:left;}
+  .recap .rc + .rc{ border-left:1px solid var(--ink-line);}
+  .recap .rc .num{ font-family:var(--mono); font-size:24px; color:var(--gold-bright);}
+  .recap .rc .lab{ font-size:11.5px; color:var(--ink-text-dim); margin-top:6px;}
+  @media (max-width:900px){ .recap{grid-template-columns:1fr 1fr;} .recap .rc:nth-child(2n+1){border-left:none;} }
+  .contact-block{ display:flex; gap:60px; margin-top:20px; flex-wrap:wrap;}
+  .contact-block .item .k{ font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-text-dim);}
+  .contact-block .item .v{ font-family:var(--serif); font-size:19px; margin-top:6px;}
+</style>
+</head>
+<body>
+<div class="slide close-slide">
+  <div class="content">
+    <div class="kicker">Chapter 08 &middot; Close</div>
+    <h1 class="close-title">Books get published one at a time.<br>Software finds the <em>next one</em> for you.</h1>
+    <p class="lede">KDP Niche Scout is live, in production, generating revenue at margins that hold
+    from 50 users to 500. The ask on p.18 is about speed, not survival.</p>
+
+    <div class="recap" aria-hidden="true">
+      <div class="rc"><div class="num">4</div><div class="lab">product stages, one pipeline</div></div>
+      <div class="rc"><div class="num">5</div><div class="lab">live Amazon marketplaces</div></div>
+      <div class="rc"><div class="num">~50%</div><div class="lab">realistic gross margin, every tier</div></div>
+      <div class="rc"><div class="num">500</div><div class="lab">users modeled by month 12</div></div>
+    </div>
+
+    <div class="contact-block">
+      <div class="item"><div class="k">Founder</div><div class="v">[ your name ]</div></div>
+      <div class="item"><div class="k">Contact</div><div class="v">[ email / phone ]</div></div>
+      <div class="item"><div class="k">Live product</div><div class="v">kdp-niche-scout-production.up.railway.app</div></div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

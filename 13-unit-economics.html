@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit economics — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .layout{ display:grid; grid-template-columns:1.15fr .85fr; gap:44px; margin-top:28px; align-items:start;}
+  @media (max-width:960px){ .layout{grid-template-columns:1fr;} }
+  .stat-row{ display:flex; gap:40px; margin-top:26px; flex-wrap:wrap;}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 06 &middot; Unit Economics</div>
+    <h1>Every tier clears roughly half its revenue before overhead.</h1>
+    <p class="lede">Two variable costs per customer: AI research calls, and AI cover-art credits.
+    Both are metered against real Gemini pricing, at two scenarios — a worst-case floor and a
+    realistic blended-usage estimate.</p>
+
+    <div class="layout">
+      <table class="ledger">
+        <thead>
+          <tr><th>Per user / mo</th><th class="num-right">Starter</th><th class="num-right">Pro</th><th class="num-right">Studio</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="label">Subscription price</td><td class="num-right">$9.99</td><td class="num-right">$19.99</td><td class="num-right">$49.99</td></tr>
+          <tr><td class="label">Research cost (search + comp. analysis)</td><td class="num-right">$2.50</td><td class="num-right">$4.00</td><td class="num-right">$10.00</td></tr>
+          <tr><td class="label">Cover credit cost — realistic blend</td><td class="num-right">$2.00</td><td class="num-right">$4.80</td><td class="num-right">$12.00</td></tr>
+          <tr><td class="label">Payment processing (3.5%)</td><td class="num-right">$0.35</td><td class="num-right">$0.70</td><td class="num-right">$1.75</td></tr>
+          <tr class="total"><td class="label">Gross margin / user</td><td class="num-right" style="color:#8fbf7c;">$5.14</td><td class="num-right" style="color:#8fbf7c;">$10.49</td><td class="num-right" style="color:#8fbf7c;">$26.24</td></tr>
+          <tr><td class="label">Gross margin %</td><td class="num-right">51.5%</td><td class="num-right">52.5%</td><td class="num-right">52.5%</td></tr>
+        </tbody>
+      </table>
+
+      <div>
+        <h3 style="margin-bottom:10px;">Two cost lenses, on purpose</h3>
+        <p class="body-text" style="font-size:14.5px;">"Worst case" assumes every credit a customer
+        spends goes toward the single most expensive cover action possible. "Realistic" reflects
+        actual blended usage across the credit system. The table above uses the realistic figure —
+        even the worst-case floor still clears roughly 46&ndash;47% gross margin per user, shown below.</p>
+        <div class="stat-row">
+          <div class="stat"><div class="num rose">46.5%</div><div class="label">gross margin, worst-case cost floor</div></div>
+          <div class="stat"><div class="num green">52.5%</div><div class="label">gross margin, realistic usage</div></div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule">
+    <p class="small">Figures exclude shared infrastructure (see p. 17) and unmodeled costs such as
+    customer acquisition, churn, and support (see p. 19). Cover-generation cost benchmarked to
+    Gemini 2.5/3.1 Flash Image, 2K print-resolution pricing.</p>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

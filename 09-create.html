@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .layout{ display:grid; grid-template-columns: .9fr 1.1fr; gap:44px; margin-top:26px; align-items:start;}
+  @media (max-width:960px){ .layout{grid-template-columns:1fr;} }
+  .cover-mock{ display:flex; gap:14px; align-items:flex-end;}
+  .book-cover{ width:150px; height:210px; background:linear-gradient(160deg,#2b3a2c,#1c2a1d); border:1px solid var(--ink-line); position:relative; box-shadow:0 18px 30px rgba(0,0,0,.4);}
+  .book-cover .spine-shadow{ position:absolute; left:0; top:0; bottom:0; width:10px; background:rgba(0,0,0,.35);}
+  .book-cover .title{ position:absolute; top:26px; left:22px; right:16px; font-family:var(--serif); font-weight:600; font-size:16px; color:#E4BE4A; line-height:1.15;}
+  .book-cover .sub{ position:absolute; top:70px; left:22px; right:16px; font-family:var(--sans); font-size:9px; color:#cfd6c9; letter-spacing:.04em;}
+  .book-cover .auth{ position:absolute; bottom:16px; left:22px; font-family:var(--mono); font-size:9px; color:#a9b6a3; letter-spacing:.05em;}
+  .steps6{ display:flex; flex-direction:column; gap:0; margin-top:14px;}
+  .steps6 .s6{ display:flex; gap:12px; padding:8px 0; align-items:baseline;}
+  .steps6 .s6 .k{ font-family:var(--mono); font-size:10.5px; color:var(--gold); width:26px; flex-shrink:0;}
+  .steps6 .s6 .v{ font-size:12px; color:var(--ink-text-dim);}
+  .feature-list .f{ padding:16px 0; border-bottom:1px solid var(--ink-line);}
+  .feature-list .f h4{ font-family:var(--serif); font-size:17px; margin:0 0 6px;}
+  .feature-list .f p{ font-size:13px; color:var(--ink-text-dim); margin:0; line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 03 &middot; Product &middot; Stage 3</div>
+    <h1>The validated idea becomes an actual, sellable book.</h1>
+    <p class="lede">This is the stage that separates a keyword tool from a publishing tool: the
+    software doesn't just tell you what to write — it writes it, designs it, and assembles it.</p>
+
+    <div class="layout">
+      <div>
+        <div class="cover-mock" aria-hidden="true">
+          <div class="book-cover">
+            <div class="spine-shadow"></div>
+            <div class="title">Left-Handed<br>Calligraphy</div>
+            <div class="sub">A Practice Workbook for Beginners</div>
+            <div class="auth">J. MERCER</div>
+          </div>
+        </div>
+        <div class="steps6">
+          <div class="s6"><span class="k">1/6</span><span class="v">Interior spec generated for the chosen book type</span></div>
+          <div class="s6"><span class="k">2/6</span><span class="v">Interior PDF rendered (white / cream / color paper)</span></div>
+          <div class="s6"><span class="k">3/6</span><span class="v">Cover art generated from an AI image model</span></div>
+          <div class="s6"><span class="k">4/6</span><span class="v">Full-wrap cover PDF assembled with crisp, exact title text</span></div>
+          <div class="s6"><span class="k">5/6</span><span class="v">KDP-ready metadata written: title, blurb, keywords, categories</span></div>
+          <div class="s6"><span class="k">6/6</span><span class="v">Interior, cover, and metadata packaged into one download</span></div>
+        </div>
+      </div>
+
+      <div class="feature-list">
+        <div class="f"><h4>Exact-text covers, not AI guesswork</h4><p>The hardest part of AI-generated covers is that the model garbles text. This engine spells the real title, subtitle, and author name letter-by-letter into the prompt, and draws the final text as a crisp vector layer on top of the art — so what's on the cover is always exactly what the author typed.</p></div>
+        <div class="f"><h4>Style mimicry, on request</h4><p>Upload a cover you like, and a vision model extracts its composition, palette, typography, and mood into a reusable "Style DNA" — apply that look to a brand-new book, or save it to a personal library for every future project.</p></div>
+        <div class="f"><h4>37 book types, built in</h4><p>Log books, activity books, workbooks, coloring books, planners, and more each ship with their own default layout and design conventions, so the output looks purpose-built, not generic.</p></div>
+        <div class="f"><h4>It never hangs</h4><p>Every AI call in this pipeline runs against a hard timeout, so a slow or failed model response degrades gracefully instead of freezing a customer's job at 60% forever.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

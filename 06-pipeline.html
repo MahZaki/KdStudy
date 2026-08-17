@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One pipeline — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .pipeline{ margin-top:44px; }
+  .pipe-row{ display:flex; align-items:stretch; }
+  .pipe-step{ flex:1; position:relative; padding:0 18px 0 0; }
+  .pipe-step:last-child{ padding-right:0; }
+  .pipe-card{ background:var(--ink-2); border:1px solid var(--ink-line); padding:22px 18px; height:100%; position:relative;}
+  .pipe-card .n{ font-family:var(--mono); font-size:10px; color:var(--gold); letter-spacing:.1em;}
+  .pipe-card h4{ font-family:var(--serif); font-size:20px; margin:8px 0 8px;}
+  .pipe-card p{ font-size:12px; color:var(--ink-text-dim); margin:0; line-height:1.5;}
+  .pipe-arrow{ display:flex; align-items:center; justify-content:center; width:28px; color:var(--gold); font-size:18px; }
+  .stage-active{ border-color:var(--gold); }
+  @media (max-width:1000px){ .pipe-row{flex-direction:column;} .pipe-arrow{ transform:rotate(90deg); width:auto; height:20px;} }
+
+  .status-strip{ display:flex; justify-content:space-between; margin-top:14px; font-family:var(--mono); font-size:10.5px; color:var(--ink-text-dim); }
+  .why{ margin-top:52px; display:grid; grid-template-columns:1fr 1fr; gap:30px;}
+  @media (max-width:900px){ .why{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 03 &middot; Product</div>
+    <h1>Five stages. One session. Nothing re-typed.</h1>
+    <p class="lede">Every research query becomes a tracked "project" that moves through the same
+    five stages, automatically, so the author never starts over from a blank spreadsheet.</p>
+
+    <div class="pipeline">
+      <div class="pipe-row">
+        <div class="pipe-step"><div class="pipe-card"><div class="n">STAGE 1</div><h4>Discover</h4><p>Search a topic or generate niche ideas. The engine scores hundreds of live Amazon listings in real time.</p></div></div>
+        <div class="pipe-arrow">&rarr;</div>
+        <div class="pipe-step"><div class="pipe-card"><div class="n">STAGE 2</div><h4>Validate</h4><p>One market snapshot: is this niche penetrable? Green, yellow, or red — with the evidence behind it.</p></div></div>
+        <div class="pipe-arrow">&rarr;</div>
+        <div class="pipe-step"><div class="pipe-card"><div class="n">STAGE 3</div><h4>Create</h4><p>Turn the validated niche into a real book: interior, cover art, full-wrap cover PDF, KDP metadata.</p></div></div>
+        <div class="pipe-arrow">&rarr;</div>
+        <div class="pipe-step"><div class="pipe-card"><div class="n">STAGE 4</div><h4>Launch</h4><p>A checklist plus a browser extension that auto-fills Amazon's own publishing form.</p></div></div>
+        <div class="pipe-arrow">&rarr;</div>
+        <div class="pipe-step"><div class="pipe-card stage-active"><div class="n">STAGE 5</div><h4>Published</h4><p>Live on Amazon, generating royalties — and, from the software's point of view, a completed cycle.</p></div></div>
+      </div>
+    </div>
+
+    <div class="why">
+      <div>
+        <h3 style="margin-bottom:10px;">Why the pipeline matters more than any single feature</h3>
+        <p class="body-text" style="font-size:14.5px;">Most keyword-research tools stop at Stage 1 and hand
+        the author a spreadsheet. The gap between "here's a promising keyword" and "here's a book for
+        sale" is where authors actually give up. Carrying one session all the way through is the
+        product's real differentiator — and the reason a customer stays subscribed past month one.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:10px;">What's threaded through every stage</h3>
+        <p class="body-text" style="font-size:14.5px;">A single <span class="mono" style="color:var(--gold-bright)">session_id</span> carries
+        the research forward automatically — the app advances the stage on its own as work is completed,
+        with a manual override always available. Nothing has to be copy-pasted between tools, because
+        there's only one tool.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

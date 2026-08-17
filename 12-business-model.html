@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business model — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .tier-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:32px; border:1px solid var(--ink-line);}
+  .tcard{ padding:28px 24px; position:relative;}
+  .tcard + .tcard{ border-left:1px solid var(--ink-line);}
+  .tcard.mid{ background:var(--ink-3);}
+  .tcard .mixtag{ position:absolute; top:22px; right:20px; font-family:var(--mono); font-size:10px; color:var(--ink-text-dim);}
+  .tcard h4{ font-family:var(--serif); font-size:22px; margin:0 0 4px;}
+  .tcard .price{ font-family:var(--mono); font-size:32px; color:var(--gold-bright); margin:14px 0 20px;}
+  .tcard .price span{ font-size:13px; color:var(--ink-text-dim);}
+  .tcard ul{ list-style:none; padding:0; margin:0; font-size:12.5px; color:var(--ink-text-dim); }
+  .tcard ul li{ padding:7px 0; border-top:1px solid var(--ink-line); display:flex; justify-content:space-between; gap:8px;}
+  .tcard ul li:first-child{ border-top:none;}
+  .tcard ul li b{ color:var(--ink-text); font-weight:500; font-family:var(--mono); font-size:12px;}
+  @media (max-width:900px){ .tier-grid{grid-template-columns:1fr;} .tcard + .tcard{border-left:none;border-top:1px solid var(--ink-line);} }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 05 &middot; Business Model</div>
+    <h1>Flat, predictable subscriptions — priced by how serious the author is.</h1>
+    <p class="lede">No usage-based billing shock, no per-seat sales team. Three tiers, self-serve,
+    each sized to a different kind of KDP author.</p>
+
+    <div class="tier-grid">
+      <div class="tcard">
+        <div class="mixtag">55% of users</div>
+        <h4>Starter</h4>
+        <div class="price">$9.99<span>/mo</span></div>
+        <ul>
+          <li><span>Searches / mo</span><b>240</b></li>
+          <li><span>Competitor analyses</span><b>5</b></li>
+          <li><span>Cover credits</span><b>125</b></li>
+        </ul>
+      </div>
+      <div class="tcard mid">
+        <div class="mixtag">35% of users</div>
+        <h4>Pro</h4>
+        <div class="price">$19.99<span>/mo</span></div>
+        <ul>
+          <li><span>Searches / mo</span><b>300</b></li>
+          <li><span>Competitor analyses</span><b>50</b></li>
+          <li><span>Cover credits</span><b>300</b></li>
+        </ul>
+      </div>
+      <div class="tcard">
+        <div class="mixtag">10% of users</div>
+        <h4>Studio</h4>
+        <div class="price">$49.99<span>/mo</span></div>
+        <ul>
+          <li><span>Searches / mo</span><b>800</b></li>
+          <li><span>Competitor analyses</span><b>100</b></li>
+          <li><span>Cover credits</span><b>750</b></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="rule">
+    <div class="grid grid-2">
+      <div>
+        <h3 style="margin-bottom:10px;">Why flat allowances, not metered credits, for research</h3>
+        <p class="body-text" style="font-size:14.5px;">Search and competitor-analysis costs are pennies
+        per call, so they're given as a fixed monthly allowance — simple to understand, simple to sell.
+        Only the more expensive action, cover art generation, is metered by a credit system, which is
+        where the real cost sensitivity lives.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:10px;">The mix that drives the model</h3>
+        <p class="body-text" style="font-size:14.5px;">Every projection in this deck assumes the
+        55 / 35 / 10 tier mix shown above — a conservative, Starter-heavy split. If Pro and Studio
+        adoption comes in even slightly higher, every margin number on the following pages moves up,
+        not down.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

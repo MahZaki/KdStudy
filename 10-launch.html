@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launch — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .layout{ display:grid; grid-template-columns: 1fr 1fr; gap:44px; margin-top:26px; align-items:center;}
+  @media (max-width:960px){ .layout{grid-template-columns:1fr;} }
+  .form-mock{ background:var(--ink-2); border:1px solid var(--ink-line); padding:22px;}
+  .form-mock .field{ margin-bottom:14px;}
+  .form-mock label{ font-family:var(--mono); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-text-dim); display:block; margin-bottom:5px;}
+  .form-mock .val{ background:var(--ink); border:1px solid rgba(201,162,39,.5); padding:8px 10px; font-size:12.5px; position:relative;}
+  .form-mock .val::after{ content:'\2713'; position:absolute; right:8px; top:8px; color:var(--gold-bright); font-size:11px;}
+  .feature-list .f{ padding:16px 0; border-bottom:1px solid var(--ink-line);}
+  .feature-list .f h4{ font-family:var(--serif); font-size:17px; margin:0 0 6px;}
+  .feature-list .f p{ font-size:13px; color:var(--ink-text-dim); margin:0; line-height:1.6;}
+  .checklist{ margin-top:18px;}
+  .checklist .c{ display:flex; gap:10px; align-items:center; font-family:var(--mono); font-size:11.5px; color:var(--ink-text-dim); padding:5px 0;}
+  .checklist .c i{ width:12px;height:12px;border:1px solid var(--gold); display:inline-block; flex-shrink:0;}
+  .checklist .c.done i{ background:var(--gold); }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 03 &middot; Product &middot; Stage 4</div>
+    <h1>The last mile — filling in Amazon's own form — is automated too.</h1>
+    <p class="lede">A companion Chrome extension takes the finished listing straight to Amazon's
+    publishing page and types it in, field by field, so nothing gets lost in translation.</p>
+
+    <div class="layout">
+      <div class="form-mock" aria-hidden="true">
+        <div class="small" style="margin-bottom:14px; color:var(--gold-bright); font-family:var(--mono);">amazon.com &middot; kdp create new title</div>
+        <div class="field"><label>Title</label><div class="val">Left-Handed Calligraphy</div></div>
+        <div class="field"><label>Subtitle</label><div class="val">A Practice Workbook for Beginners</div></div>
+        <div class="field"><label>Description</label><div class="val">Master elegant script&hellip; (auto-filled)</div></div>
+        <div class="field"><label>Keywords</label><div class="val">calligraphy, left handed, lettering&hellip;</div></div>
+        <div class="checklist">
+          <div class="c done"><i></i> Interior PDF uploaded</div>
+          <div class="c done"><i></i> Cover PDF uploaded</div>
+          <div class="c"><i></i> Author confirms &amp; saves draft</div>
+        </div>
+      </div>
+
+      <div class="feature-list">
+        <div class="f"><h4>"Publish to KDP" button</h4><p>One click from the finished listing opens Amazon's Create New Title page and injects the title, subtitle, author, description, keywords, and categories automatically.</p></div>
+        <div class="f"><h4>Amazon stays the source of truth</h4><p>The author still uploads the final files and hits save inside Amazon's own dashboard — this removes re-typing, not control or compliance.</p></div>
+        <div class="f"><h4>A checklist, not a black box</h4><p>The Launch screen tracks exactly what's done and what's left per project, so nothing gets published half-finished.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

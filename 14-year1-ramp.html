@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The first 12 months — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .stat-strip{ display:flex; gap:44px; margin-top:22px; flex-wrap:wrap;}
+  .legend{ display:flex; gap:22px; margin-top:10px; font-family:var(--mono); font-size:11px; color:var(--ink-text-dim);}
+  .legend .li{ display:flex; align-items:center; gap:6px;}
+  .legend .sw{ width:14px; height:2px; display:inline-block;}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 07 &middot; Financials</div>
+    <h1>10 paying users in month one. 500 by month twelve.</h1>
+    <p class="lede">The model below is deliberately conservative: a slow, believable organic ramp,
+    not a hockey-stick. Every other number in this deck's financials flows from this one curve.</p>
+
+    <div class="chart-wrap">
+      <svg viewBox="0 0 940 280" width="100%" role="img" aria-label="Monthly revenue and net profit rising over 12 months, revenue reaching 8745 dollars and net profit reaching 4352 dollars by month 12">
+        <g stroke="#333d44" stroke-width="1">
+          <line x1="60" y1="40" x2="60" y2="260"/>
+          <line x1="60" y1="260" x2="900" y2="260"/>
+        </g>
+        <g class="axis-label">
+          <text x="54" y="264" text-anchor="end">$0</text>
+          <text x="54" y="152" text-anchor="end">$4.4K</text>
+          <text x="54" y="44" text-anchor="end">$8.7K</text>
+        </g>
+        <g class="axis-label" text-anchor="middle">
+          <text x="60" y="276">M1</text><text x="212.7" y="276">M3</text>
+          <text x="365.5" y="276">M5</text><text x="518.2" y="276">M7</text>
+          <text x="670.9" y="276">M9</text><text x="823.6" y="276">M11</text>
+          <text x="900" y="276">M12</text>
+        </g>
+        <!-- revenue area -->
+        <polygon points="60,255.2 136.4,248.2 212.7,237.6 289.1,224.8 365.5,207.2 441.8,185.3 518.2,158.4 594.5,128.0 670.9,106.1 747.3,84.0 823.6,61.6 900,40 900,260 60,260" fill="#C9A227" fill-opacity="0.10"/>
+        <polyline points="60,255.2 136.4,248.2 212.7,237.6 289.1,224.8 365.5,207.2 441.8,185.3 518.2,158.4 594.5,128.0 670.9,106.1 747.3,84.0 823.6,61.6 900,40" fill="none" stroke="#E4BE4A" stroke-width="2.5"/>
+        <polyline points="60,258.0 136.4,254.3 212.7,248.8 289.1,244.0 365.5,234.8 441.8,224.8 518.2,210.8 594.5,194.9 670.9,183.5 747.3,173.5 823.6,161.8 900,150.5" fill="none" stroke="#8fbf7c" stroke-width="2.5" stroke-dasharray="5 4"/>
+        <circle cx="900" cy="40" r="4" fill="#E4BE4A"/>
+        <circle cx="900" cy="150.5" r="4" fill="#8fbf7c"/>
+        <text x="885" y="30" text-anchor="end" font-family="IBM Plex Mono" font-size="13" fill="#E4BE4A">$8,745 MRR</text>
+        <text x="885" y="168" text-anchor="end" font-family="IBM Plex Mono" font-size="13" fill="#8fbf7c">$4,352 profit</text>
+      </svg>
+    </div>
+    <div class="legend" aria-hidden="true">
+      <div class="li"><span class="sw" style="background:#E4BE4A;"></span>Monthly revenue</div>
+      <div class="li"><span class="sw" style="background:#8fbf7c; border-top:2px dashed #8fbf7c; height:0;"></span>Monthly net profit (realistic)</div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat"><div class="num">500</div><div class="label">paying users by month 12</div></div>
+      <div class="stat"><div class="num">$47,043</div><div class="label">total Year&nbsp;1 revenue</div></div>
+      <div class="stat"><div class="num green">$23,064</div><div class="label">total Year&nbsp;1 net profit, realistic case</div></div>
+      <div class="stat"><div class="num">49.0%</div><div class="label">Year&nbsp;1 blended net margin, realistic case</div></div>
+    </div>
+    <p class="small" style="margin-top:22px;">Full monthly breakdown — user counts by tier, revenue,
+    every cost line, and both margin scenarios — is available in the accompanying workbook.</p>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

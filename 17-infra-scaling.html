@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infrastructure that scales in steps — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .band-table{ margin-top:8px;}
+  .layout{ display:grid; grid-template-columns:1.1fr .9fr; gap:44px; margin-top:22px; align-items:start;}
+  @media (max-width:960px){ .layout{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 07 &middot; Financials</div>
+    <h1>Hosting costs $19 a month until it needs to cost $209.</h1>
+    <p class="lede">The whole application — API, background workers, and database — runs in a single
+    Docker container, so infrastructure spend jumps in four discrete steps rather than climbing
+    continuously with every new signup.</p>
+
+    <div class="layout">
+      <div class="chart-wrap">
+        <svg viewBox="0 0 560 260" width="100%" role="img" aria-label="Infrastructure cost step chart: 19 dollars per month up to 75 users, 95 dollars up to 150 users, 150 dollars up to 350 users, 209 dollars above that">
+          <g stroke="#333d44" stroke-width="1">
+            <line x1="50" y1="20" x2="50" y2="210"/>
+            <line x1="50" y1="210" x2="530" y2="210"/>
+          </g>
+          <g class="axis-label">
+            <text x="46" y="214" text-anchor="end">$0</text>
+            <text x="46" y="118" text-anchor="end">$105</text>
+            <text x="46" y="26" text-anchor="end">$210</text>
+          </g>
+          <g class="axis-label" text-anchor="middle">
+            <text x="90" y="228">0</text>
+            <text x="200" y="228">75</text>
+            <text x="290" y="228">150</text>
+            <text x="420" y="228">350</text>
+            <text x="500" y="228">500+</text>
+          </g>
+          <!-- steps: users 0-75 -> $19, 76-150 -> $95, 151-350 -> $150, 351+ -> $209 -->
+          <polyline points="70,192 210,192 210,140 300,140 300,116 430,116 430,42 520,42"
+            fill="none" stroke="#E4BE4A" stroke-width="2.5"/>
+          <g fill="#C9A227" fill-opacity="0.10">
+            <rect x="70" y="192" width="140" height="18"/>
+            <rect x="210" y="140" width="90" height="70"/>
+            <rect x="300" y="116" width="130" height="94"/>
+            <rect x="430" y="42" width="90" height="168"/>
+          </g>
+          <g font-family="IBM Plex Mono" font-size="12" fill="#ECE6D6">
+            <text x="140" y="185">$19</text>
+            <text x="255" y="133">$95</text>
+            <text x="365" y="109">$150</text>
+            <text x="475" y="35">$209</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <h3 style="margin-bottom:12px;">The four bands</h3>
+        <table class="ledger">
+          <thead><tr><th>Users</th><th>Infra / mo</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>0&ndash;75</td><td>$19</td><td class="label">Single container, no proxy needed</td></tr>
+            <tr><td>76&ndash;150</td><td>$95</td><td class="label">Adds proxy rotation for scraping at volume</td></tr>
+            <tr><td>151&ndash;350</td><td>$150</td><td class="label">Transitional capacity tier</td></tr>
+            <tr><td>351+</td><td>$209</td><td class="label">Current largest verified plan</td></tr>
+          </tbody>
+        </table>
+        <p class="body-text" style="font-size:13.5px; margin-top:18px;">By month 12, at 500 users
+        and $8,745 in monthly revenue, infrastructure costs just $209 — roughly 2.4% of revenue.
+        This is the single biggest reason margin expands rather than compresses with scale.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

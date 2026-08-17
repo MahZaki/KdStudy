@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover — KDP Niche Scout</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .layout{ display:grid; grid-template-columns: .95fr 1.05fr; gap:44px; margin-top:26px; align-items:start;}
+  @media (max-width:960px){ .layout{grid-template-columns:1fr;} }
+  .mock{ background:var(--ink-2); border:1px solid var(--ink-line); padding:18px; }
+  .mock .searchbar{ display:flex; align-items:center; gap:10px; background:var(--ink); border:1px solid var(--ink-line); padding:10px 14px; font-family:var(--mono); font-size:13px; color:var(--ink-text-dim);}
+  .mock .searchbar b{ color:var(--ink-text); font-weight:400;}
+  .mock .presets{ display:flex; gap:8px; margin-top:12px; flex-wrap:wrap;}
+  .resultcard{ display:flex; gap:12px; align-items:center; padding:12px 8px; border-bottom:1px solid var(--ink-line);}
+  .resultcard .cover{ width:34px; height:46px; background:linear-gradient(160deg,#3a3020,#2a2418); border:1px solid var(--ink-line); flex-shrink:0;}
+  .resultcard .info{ flex:1; }
+  .resultcard .info .t{ font-size:12.5px; }
+  .resultcard .info .m{ font-family:var(--mono); font-size:10.5px; color:var(--ink-text-dim); margin-top:3px;}
+  .resultcard .score{ font-family:var(--mono); font-size:13px; padding:3px 9px; border-radius:20px;}
+  .score.green{ color:#8fbf7c; border:1px solid rgba(92,138,74,.5);}
+  .score.gold{ color:var(--gold-bright); border:1px solid rgba(201,162,39,.5);}
+  .score.rose{ color:#e0958c; border:1px solid rgba(177,75,65,.5);}
+  .feature-list{ margin-top:0;}
+  .feature-list .f{ padding:16px 0; border-bottom:1px solid var(--ink-line);}
+  .feature-list .f h4{ font-family:var(--serif); font-size:17px; margin:0 0 6px; display:flex; gap:10px; align-items:baseline;}
+  .feature-list .f h4 .tagm{ font-family:var(--mono); font-size:10px; color:var(--gold); border:1px solid var(--ink-line); padding:2px 7px; border-radius:10px;}
+  .feature-list .f p{ font-size:13px; color:var(--ink-text-dim); margin:0; line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="content">
+    <div class="kicker">Chapter 03 &middot; Product &middot; Stage 1</div>
+    <h1>Type a topic. Watch real Amazon data come back live.</h1>
+    <p class="lede">This is the front door of the product: a search box that quietly does the work
+    of that entire 6-hour manual research day.</p>
+
+    <div class="layout">
+      <div class="mock" aria-hidden="true">
+        <div class="searchbar">&#128269; <b>left handed calligraphy workbook</b></div>
+        <div class="presets">
+          <span class="tag gold">Low-hanging fruit</span><span class="tag">Hot now</span><span class="tag">New-entrant friendly</span>
+        </div>
+        <div style="margin-top:14px;">
+          <div class="resultcard"><div class="cover"></div><div class="info"><div class="t">Calligraphy for Beginners: Left-Hand Edition</div><div class="m">BSR #18,204 &middot; $12.99 &middot; 41 reviews</div></div><div class="score green">82</div></div>
+          <div class="resultcard"><div class="cover"></div><div class="info"><div class="t">Modern Script Practice Workbook</div><div class="m">BSR #61,930 &middot; $9.99 &middot; 12 reviews</div></div><div class="score green">77</div></div>
+          <div class="resultcard"><div class="cover"></div><div class="info"><div class="t">The Complete Hand Lettering Bible</div><div class="m">BSR #4,102 &middot; $14.99 &middot; 2,310 reviews</div></div><div class="score rose">31</div></div>
+          <div class="resultcard" style="border-bottom:none;"><div class="cover"></div><div class="info"><div class="t">Everyday Cursive Drills</div><div class="m">BSR #144,802 &middot; $7.99 &middot; 3 reviews</div></div><div class="score gold">64</div></div>
+        </div>
+      </div>
+
+      <div class="feature-list">
+        <div class="f"><h4>Live search <span class="tagm">not a database</span></h4><p>Every query crawls Amazon's real, current search results and product pages — the app is never showing an investor last month's snapshot, and neither is it showing the author one.</p></div>
+        <div class="f"><h4>Opportunity score <span class="tagm">one number</span></h4><p>Sales rank, competition density, price, and rating are blended into a single 0&ndash;100 score per book, so a beginner can act on it without understanding Amazon's ranking algorithm.</p></div>
+        <div class="f"><h4>Smart presets <span class="tagm">zero setup</span></h4><p>One-tap filters — "low-hanging fruit," "hot right now," "new-entrant friendly" — surface the shortlist without the author writing a single filter query.</p></div>
+        <div class="f"><h4>Niche generator <span class="tagm">idea engine</span></h4><p>When an author has no starting keyword at all, a combinatorial engine crosses topics, book types, audiences, and goals to propose fresh angles no one has typed in yet.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>
